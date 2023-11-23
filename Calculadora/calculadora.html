@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <select name="idioma" id="idioma">
-<option value="es">Espanõl</option>
-<option value="en">English</option>
-<option value="br" selected>Português[Brasil]</option>
-<option value="fr">Français</option>
-</select>
-    <h1>Calculadora</h1>
+        <option value="es">Espanõl</option>
+        <option value="en">English</option>
+        <option value="br" selected>Português[Brasil]</option>
+        <option value="fr">Français</option>
+    </select>
+    <h1 id="titulo">Calculadora</h1>
     <br>
-    <input type="text" name="valor1" id="valor1">
-    <input type="text" name="valor2" id="valor2">
-    <input type="text" name="resultado" id="resultado" disabled>
 
-    
+    <div class="conteudo">
+        <input type="text" name="resultado" id="resultado" disabled>
+        <input type="text" name="valor1" id="valor1">
+        <input type="text" name="valor2" id="valor2">
+       
 
-    <input type="button" value="Somar" id="btSoma">
-    <input type="button" value="Subtrair" id="btsub">
-    <input type="button" value="Multiplicar" id="btmult">
-    <input type="button" value="Dividir" id="btdiv">
+
+
+        <input type="button" value="Somar" id="btSoma">
+        <input type="button" value="Subtrair" id="btsub">
+        <input type="button" value="Multiplicar" id="btmult">
+        <input type="button" value="Dividir" id="btdiv">
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="translate.js"></script>
 </body>
+
 </html>
