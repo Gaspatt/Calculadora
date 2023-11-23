@@ -10,6 +10,6 @@ function Somar() {
 
     function soma(a, b) {
         resultado.textContent = (a + b)
-        alert(a+b-)
+        
     }
 }
