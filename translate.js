@@ -15,32 +15,30 @@ linguaFrancesa.src = "linguas/francais.js"
 document.head.appendChild(linguaFrancesa)
 
 let seletIdioma = document.querySelector('#idioma')
-seletIdioma.addEventListener('change', function() {
-    TransformStreamDefaultController(this.value)
+seletIdioma.addEventListener('change', function () {
+    translate(this.value)
 })
 
 function translate(idioma) {
-    const traducao = (idioma = 'br') ? portugues ()
-    : (idioma == 'es') ? espanhol()
-    : (idioma == 'en') ? english()
-    : (idioma == 'fr') ? francais()
-    : null
+    const traducao = (idioma == 'br') ? portugues()
+        : (idioma == 'es') ? espanhol()
+            : (idioma == 'en') ? english()
+                : (idioma == 'fr') ? francais()
+                    : null;
     setLanguage(traducao)
 }
 
 function setLanguage(traducao) {
-    btsoma = document.getElementById('btsoma')
+    btSoma = document.getElementById('btSoma')
     btsub = document.getElementById('btsub')
     btdiv = document.getElementById('btdiv')
     btmult = document.getElementById('btmult')
     titulo = document.getElementById('titulo')
-    boasVindas = document.getElementById('boasVindas')
 
-    btsoma.value = traducao.soma
-    btsub.value = traducao.subtracao
-    btdiv.value = traducao.divisao
-    btmult.value = traducao.multiplicacao
-    boasVindas.value = traducao.boasVindas
+    btSoma.value = traducao.btSoma
+    btsub.value = traducao.btsub
+    btdiv.value = traducao.btdiv
+    btmult.value = traducao.btmulti
     titulo.value = traducao.titulo
 
 }
